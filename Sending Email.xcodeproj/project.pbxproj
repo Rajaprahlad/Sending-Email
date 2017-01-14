@@ -14,6 +14,7 @@
 		A73DF5D01E2A98BF00E5BB1E /* Sending_Email.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A73DF5CE1E2A98BF00E5BB1E /* Sending_Email.xcdatamodeld */; };
 		A73DF5D21E2A98BF00E5BB1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A73DF5D11E2A98BF00E5BB1E /* Assets.xcassets */; };
 		A73DF5D51E2A98BF00E5BB1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A73DF5D31E2A98BF00E5BB1E /* LaunchScreen.storyboard */; };
+		A73DF5DE1E2A99BC00E5BB1E /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A73DF5DD1E2A99BC00E5BB1E /* MessageUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		A73DF5D11E2A98BF00E5BB1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A73DF5D41E2A98BF00E5BB1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A73DF5D61E2A98BF00E5BB1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A73DF5DD1E2A99BC00E5BB1E /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A73DF5DE1E2A99BC00E5BB1E /* MessageUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +49,7 @@
 			children = (
 				A73DF5C11E2A98BF00E5BB1E /* Sending Email */,
 				A73DF5C01E2A98BF00E5BB1E /* Products */,
+				A73DF5DC1E2A99BC00E5BB1E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,6 +84,14 @@
 				A73DF5C31E2A98BF00E5BB1E /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A73DF5DC1E2A99BC00E5BB1E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A73DF5DD1E2A99BC00E5BB1E /* MessageUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import <MessageUI/MessageUI.h>
 @interface ViewController ()
 
 @end
@@ -25,5 +25,34 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+- (IBAction)ButtonPressed:(id)sender {
+    
+    
+    MFMailComposeViewController *mailComposer = [[MFMailComposeViewController alloc] init];
+    [mailComposer setMailComposeDelegate:self];
+    
+    if
+        ([MFMailComposeViewController canSendMail]){
+            
+        
+    [mailComposer setToRecipients:[NSArray arrayWithObjects:@"123@abc.com", nil]];
+     
+    [mailComposer setSubject:@"This is the Subject"];
+    [mailComposer setMessageBody:[NSString stringWithFormat:@"%@",self.Label.text] isHTML:NO];
+    [mailComposer setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
+    [self presentViewController:mailComposer animated:YES completion:NULL];
+        }else{
+            
+        }
+}
+
+-(void)mailComposeController:(nonnull MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error{
+    [self dismissViewControllerAnimated:YES completion:NULL];
+    
+    if (error) {
+        NSLog(@"%@",[error description]);
+    }
+}
 
 @end

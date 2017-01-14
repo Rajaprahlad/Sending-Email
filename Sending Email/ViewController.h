@@ -7,8 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MessageUI/MessageUI.h>
+@interface ViewController : UIViewController <MFMailComposeViewControllerDelegate, MFMessageComposeViewControllerDelegate>
+- (IBAction)ButtonPressed:(id)sender;
 
-@interface ViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *Label;
+
+
+
 
 
 @end
